@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>MMLogo-transp.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\eye-closed.png" />
+    <None Remove="Images\eye-open.png" />
+    <None Remove="Images\MMLogo.jpg" />
+    <None Remove="Images\search-svgrepo-com.svg" />
+    <None Remove="Images\search.png" />
+    <None Remove="View\search-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="MMLogo-transp.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.2.0" />
+    <PackageReference Include="SharpVectors" Version="1.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\eye-closed.png" />
+    <Resource Include="Images\eye-open.png" />
+    <Resource Include="Images\MMLogo.jpg" />
+    <Resource Include="Images\search-svgrepo-com.svg" />
+    <Resource Include="Images\search.png" />
+    <Resource Include="View\search-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Control\" />
+  </ItemGroup>
+
+</Project>
